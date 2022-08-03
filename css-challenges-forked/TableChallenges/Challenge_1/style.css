@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  font-family: "poppins", "verdana";
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root{
+  --white:#ffffff;
+  --skyblue:#609ea0;
+}
+body{
+  background: url("https://i.pinimg.com/736x/f8/24/b3/f824b3eeb5f56dab04fb7a1214be9547.jpg");
+  color:var(--white);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  /* background-color: aquamarine; */
+  height: 100vh;
+  position: relative;
+    cursor: pointer;
+
+}
+h1{
+  top:6%;
+  /* background-color: blue; */
+  position: absolute;
+  cursor: pointer;
+
+}
+h2{
+  top:18%;
+  /* background-color: blue; */
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: 500; 
+  cursor: pointer;
+
+}
+h3{
+  text-align: center;
+  /* background-color: aqua; */
+  position: absolute;
+  top:-14%;
+  left:80%;
+  width: 150px;
+  cursor: pointer;
+
+}
+.yo{
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  width: 400px;
+  height: 350px;
+  position: relative;
+  top: 7%;
+  align-items:flex-start;
+  justify-content: space-between;
+  position: absolute;
+  top: 35%;
+  left: 19%;
+  cursor: pointer;
+}
+input{
+  border: none;
+  border-radius: 1em;
+  width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+
+}
+[type="submit"]{
+  background-color:var(--skyblue);
+  border: none;
+  width: 350px;
+  height: 35px;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+
+}

@@ -1,0 +1,190 @@
+*{
+     margin: 0;
+     padding: 0;
+     outline: 0;
+}
+:root{
+     --white:#ffffff;
+     --blue:#140b5c;
+     --red: #ff0000;
+     --lightblueLin:#0277b5;
+     --pink:#e12f6d;
+     --bluetwitter: #1ea1f1;
+     --bluefacbook:#130672;
+     --smokewhite:#d0cedf;
+}
+.content{
+     display: flex;
+     flex-direction: column;
+     cursor: pointer;
+     position: absolute;
+     bottom: 5%;
+     background-color:var(--blue);
+     width: 100%;
+     height: 50%;
+     align-items: flex-start;
+     justify-content:space-between;
+     color:var(--white);
+
+
+}
+.top{
+     
+     /* background-color: bisque; */
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     height: 10vh;
+     border-bottom: 1px solid var(--white);
+     align-items: center;
+     
+}
+.logo-details{
+     padding-left: 4.5em;
+     font-size: larger;
+     display: flex;
+     align-items: center;  
+}
+
+.media-icons{
+     padding-right: 4.5em;
+     display: flex;
+     width: 200px;
+     justify-content: space-between;
+     
+}
+
+.link-boxes{
+     display: flex;
+     cursor: pointer;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: flex-start;
+     /* background-color: aquamarine; */
+     width: 100%;
+     color: var(--white);
+
+}
+ul>li{
+     list-style: none;
+     margin-bottom: 1em;
+
+}
+ul>li:first-child{
+     font-size:1.5em;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: 700;
+}
+.link_name::after{
+     content: "";
+     display: block;
+     width: 2.5em;
+     height: 0.1em;
+     background-color: var(--white);
+}
+ul>li>a{
+     list-style: none;
+     text-decoration: none;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 1em;
+     color: var(--white);
+
+
+}
+.media-icons>a{
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     color: var(--white);
+
+}
+.media-icons>a:nth-child(1){
+    
+     background-color:var(--bluefacbook);
+
+}
+
+.media-icons>a:nth-child(2){
+    
+     background-color: var(--bluetwitter);
+}
+
+.media-icons>a:nth-child(3){
+    
+     background-color:var(--pink);
+}
+.media-icons>a:nth-child(4){
+    
+     background-color: var(--lightblueLin);
+}
+.media-icons>a:nth-child(5){
+    
+     background-color: var(--red);
+}
+
+
+
+
+.bottom-details{
+     position:absolute;
+     bottom: 0%;
+     background-color:#0f0842;
+     width: 100%;
+     height: 7vh;
+    
+     
+}
+.bottom_text{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 7vh;
+     color: var(--white);
+
+}
+.copyright_text{
+     padding-left: 4.5em;
+     color: var(--white);
+
+}
+.copyright_text>a{
+     text-decoration: none;
+     list-style: none;
+     color: var(--white);
+     margin-right: 0.5em;
+
+}
+.policy_terms{
+     padding-right: 4.5em;
+}
+.policy_terms>a{
+     text-decoration: none;
+     list-style: none;
+     color: var(--white);
+     margin-right: 0.5em;
+
+
+}
+input{
+     width: 150px;
+     background-color: transparent;
+     padding: 0.5em 1.5em;
+     border: 2px solid var(--smokewhite);
+     color: var(--smokewhite) ;
+}
+input::placeholder {
+     color: var(--smokewhite) ;
+ }
+[type="button"] {
+     background-color: var(--smokewhite);
+     width: 195px;
+     outline: none;
+     border: none;
+     color:#06041a;
+     font-family: Arial, Helvetica, sans-serif;
+   }

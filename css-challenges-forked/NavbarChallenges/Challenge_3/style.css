@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;400&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,900;1,300;1,900&display=swap');
+
+
+
+
+*{
+     margin: 0;
+     padding: 0;
+     outline: 0;
+}
+:root{
+     --blue:#3d79d0;
+     --yellow:#ffa500;
+     --white:#FFFFFF;
+}
+body{
+     display: flex;
+     width: 100vw;
+     height: 60vh;
+     justify-content: center;
+     align-items: center;
+}
+i:first-child{
+     width: 5.1vw;
+     height: 10vh;
+     background-color: #1c53c0;
+     position: absolute;
+     left: 15.9%;
+     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 60%, 80% 65%, 100% 100%, 0 100%, 38% 47%, 0 0);
+     top:28%;
+   z-index: -1;
+}
+
+i:nth-child(2){
+     width: 5.1vw;
+     height: 10vh;
+     background-color: #1c53c0;
+     position: absolute;
+     right: 15.5%;
+     top:28%;
+    z-index: -1;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 59% 49%, 100% 100%, 58% 100%, 0 100%, 11% 63%, 0 63%, 0 0);
+   
+}
+
+/*.ribbon::before{
+  content: "";
+  width: 4vw;
+  height: 4vh;
+  background-color: aqua;
+  display: block;
+} */
+.nav{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     background-color: var(--blue);
+     width: 60vw;
+     height:10vh ;
+     cursor: pointer;
+     /* border-radius: 1em; */
+     z-index: 1;
+}
+.nav>a{
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+  font-family: 'Oswald', sans-serif;
+  padding: 1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 68px 68px 69px 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav>a:hover{
+     background-color: var(--yellow);
+     width: 30px;
+     height: 5px;
+}
+.nav::before{
+     content: "";
+     width: 5vw;
+     height:10vh ;
+     background: rgb(255,255,255);
+     background: linear-gradient(90deg,#FFFFFF 57%, rgba(2,0,36,1) 100%);
+     position: absolute;
+     left: 16%;
+     z-index: -2;
+     top:28%;
+}
+
+.nav::after{
+     content: "";
+     width: 5vw;
+     height:10vh ;
+     position: absolute;
+     right: 15.7%;
+     top:28%;
+     z-index: -2;
+     background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 13%, rgba(255,255,255,1) 15%);
+}
+

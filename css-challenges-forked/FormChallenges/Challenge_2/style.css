@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300;400&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,900;1,300;1,900&family=Satisfy&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --skyblue: rgba(56, 160, 230, 1);
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgb(97, 168, 54);
+  background: linear-gradient(
+    45deg,
+    rgba(210, 255, 82, 1) 0%,
+    rgba(56, 160, 230, 1) 100%
+  );
+  color: black;
+}
+.center{
+     display: flex;
+     background-color: var(--white);
+     flex-direction: column;
+     width: 350px;
+     height: 400px;
+     align-items:center;
+     justify-content:center;
+     border-radius: 0.3em;
+     position: relative;
+}
+h1{
+     font-family: 'Satisfy', cursive;
+     position: absolute;
+     font-size: 1.5em;
+     top: 10%;
+     left: 26%;
+     cursor: pointer;
+
+}
+h1::before{
+     content: "";
+     width: 3px;
+     height: 35px;
+     background-color:var(--skyblue);
+     position: absolute;
+     left: -4%;
+
+}
+form{
+     margin-top: 2em;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     height: 250px;
+}
+[type="text"]{
+     background-color:transparent;
+     padding: 0.5em;
+     outline: none;
+     border: 2px solid var(--black);
+     border-radius: 5px;
+}
+[type="button"]{
+     background-color:var(--skyblue);
+     position: absolute;
+     border: none;
+     padding: 0.5em;
+     width: 100px;
+     border-radius: 5px;
+     color: var(--white);
+}
+.inputbox{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+}
+span{
+     position: absolute;
+     top:20%;
+     left: 3%;
+}

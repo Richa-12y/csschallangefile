@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root{
+  --blue:#1B98F5;
+  --white:#ffffff;
+  --gray: #2d2828;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+.btn{
+  width: 100px;
+  height: 40px;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+  color: var(--white);
+  position: relative;
+  
+}
+a{
+  text-decoration: none;
+}
+.badge{
+  background-color: var(--gray);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  position:absolute;
+  top:-12px;
+  right: -10px;
+}
